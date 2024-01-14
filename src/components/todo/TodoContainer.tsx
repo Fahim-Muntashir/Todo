@@ -1,7 +1,6 @@
-import React from 'react';
 import TodoCard from './TodoCard';
-import { Button } from '../ui/button';
 import AddTodoModal from './AddTodoModal';
+import TodoFilter from './TodoFilter';
 
 const TodoContainer = () => {
     return (
@@ -9,7 +8,9 @@ const TodoContainer = () => {
             <div className='flex justify-between mb-5'>
 
                 <AddTodoModal></AddTodoModal>
-                <button>Filter</button>
+
+                <TodoFilter />
+
             </div>
             <div className='bg-primary-gradient w-full h-full rounded-xl p-[5px]'>
 
